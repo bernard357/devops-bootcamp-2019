@@ -65,20 +65,20 @@ Trim horizon for the starting position. Click on the 'Add' button (at the bottom
 then on the 'Save' button (at the top).
 
 3) Go to the CloudWatch console for data visualization. Select 'Metrics' from the left menu.
-  In the bottom half of the screen, click on the tab 'All metrics'.
+In the bottom half of the screen, click on the tab 'All metrics'.
 
-  Then from the 'Custom namespaces', select 'EventCount', then 'Metrics with no dimensions'.
-  Check the box near `clicks`.
+    Then from the 'Custom namespaces', select 'EventCount', then 'Metrics with no dimensions'.
+    Check the box near `clicks`.
 
-  Then click on the word 'All' just below the 'All metrics' tab. Select 'EventAnomaly',
-  then 'Metrics with no dimensions'. Check the box near `clicks`.
+    Then click on the word 'All' just below the 'All metrics' tab. Select 'EventAnomaly',
+    then 'Metrics with no dimensions'. Check the box near `clicks`.
 
-  At this stage the top half of the console should display two metrics. Click on the
-  tab 'Graphed metrics (2)'. Move the vertical axis for anomalies to the right of the graph
-  by clicking on the right arrow in the row 'EventAnomaly'. Change graph sampling from 5 minutes
-  to 10 seconds.
+    At this stage the top half of the console should display two metrics. Click on the
+    tab 'Graphed metrics (2)'. Move the vertical axis for anomalies to the right of the graph
+    by clicking on the right arrow in the row 'EventAnomaly'. Change graph sampling from 5 minutes
+    to 10 seconds.
 
-  Skip the rest of instructions on alarms for this chapter, and move directly to the next chapter.
+    Skip the rest of instructions on alarms for this chapter, and move directly to the next chapter.
 
 4) Launch the deployment of a new CloudWatch stack in the same region. After that,
 visit the CloudWatch console again, click on 'Dashboards' in the left menu, and
