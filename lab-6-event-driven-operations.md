@@ -65,7 +65,7 @@ Trim horizon for the starting position. Click on the 'Add' button (at the bottom
 then on the 'Save' button (at the top).
 
 3) Go to the CloudWatch console for data visualization. Select 'Metrics' from the left menu.
-In the bottom half of the screen, click on the tab 'All metrics'.
+  In the bottom half of the screen, click on the tab 'All metrics'.
 
   Then from the 'Custom namespaces', select 'EventCount', then 'Metrics with no dimensions'.
   Check the box near `clicks`.
