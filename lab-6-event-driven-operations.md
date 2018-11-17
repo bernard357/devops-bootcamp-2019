@@ -36,7 +36,7 @@ $ cd module-1
 $ <pasted-command-here>
 ```
 
-4) Go to CloudFormation Resources and check the AnalyticsBucket so that you are sure that
+4) Go to CloudFormation Resources and check the `AnalyticsBucket` so that you are sure that
 some data is streamed there.
 
 ### Module 2 -- Configure Kinesis Analytics to Process Clickstream Data
@@ -49,7 +49,7 @@ and then define a new stream. Do this with a copy-paste of the statement provide
 3) If you have been quick enough on previous steps, than take a couple of minutes to inspect Kinesis
 streams from the tabs 'Source data' and 'Real-time analytics' in the console.
 
-4) Connect the stream to the Lambda function that is named `realtime-analytics-workshop-ProcessMetricsFunction` from the in-application stream named 'DESTINATION_SQL_STREAM' and with the IAM role `realtime-analytics-workshop-KinesisAnalyticsRole`. Hit the button 'Save and continue'.
+4) Connect the stream to the Lambda function that is named `realtime-analytics-workshop-ProcessMetricsFunction` from the in-application stream named `DESTINATION_SQL_STREAM` and with the IAM role `realtime-analytics-workshop-KinesisAnalyticsRole`. Hit the button 'Save and continue'.
 
 5) Skip this validation step and move swiftly to the next module.
 
@@ -67,19 +67,19 @@ then on the 'Save' button (at the top).
 3) Go to the CloudWatch console for data visualization. Select 'Metrics' from the left menu.
 In the bottom half of the screen, click on the tab 'All metrics'.
 
-Then from the 'Custom namespaces', select 'EventCount', then 'Metrics with no dimensions'.
-Check the box near `clicks`.
+  Then from the 'Custom namespaces', select 'EventCount', then 'Metrics with no dimensions'.
+  Check the box near `clicks`.
 
-Then click on the word 'All' just below the 'All metrics' tab. Select 'EventAnomaly',
-then 'Metrics with no dimensions'. Check the box near `clicks`.
+  Then click on the word 'All' just below the 'All metrics' tab. Select 'EventAnomaly',
+  then 'Metrics with no dimensions'. Check the box near `clicks`.
 
-At this stage the top half of the console should display two metrics. Click on the
-tab 'Graphed metrics (2)'. Move the vertical axis for anomalies to the right of the graph
-by clicking on the right arrow in the row 'EventAnomaly'. Change graph sampling from 5 minutes
-to 10 seconds.
+  At this stage the top half of the console should display two metrics. Click on the
+  tab 'Graphed metrics (2)'. Move the vertical axis for anomalies to the right of the graph
+  by clicking on the right arrow in the row 'EventAnomaly'. Change graph sampling from 5 minutes
+  to 10 seconds.
 
-Skip the rest of instructions on alarms for this chapter, and move directly to the next chapter.
+  Skip the rest of instructions on alarms for this chapter, and move directly to the next chapter.
 
 4) Launch the deployment of a new CloudWatch stack in the same region. After that,
 visit the CloudWatch console again, click on 'Dashboards' in the left menu, and
-select the new dashboard.
+select the new dashboard. Congratulations!
