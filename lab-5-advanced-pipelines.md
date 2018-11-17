@@ -1,6 +1,6 @@
 # Hands-on with Service Catalog, CodePipeline, CodeBuild
 
-credit: “Datalake data transformation orchestration on AWS”from Paul de Monchy
+credit: “Datalake data transformation orchestration on AWS” from Paul de Monchy
 
 ## Instructions
 
@@ -41,7 +41,7 @@ and paste: https://bit.ly/2Ds1ApL
 
 For the version, you can type 'June 2018'.
 
-Then Create a portfolio for your products, using your HitHub identifier as a prefix.
+Then Create a portfolio for your products, using your GitHub identifier as a prefix.
 Last but not least, share the portfolio with yourself so that you can consume products.
 
 ### Step 2 - Provision a Git repository
@@ -94,7 +94,7 @@ $ git push
 ### Step 3 - Create your datalake
 
 In the same region where you grow the Service Catalog, create a bucket
-with your GitHub identifier as a prefix and with the suffix '-data-pipeline-artifacts'.
+with your GitHub identifier as a prefix and with the suffix '-data-artifacts'.
 Take a note of the ARN of the new S3 bucket.
 
 ### Step 4 - Provision a Cloudtrail for S3 Datalakes
@@ -163,4 +163,4 @@ Visit the Step Functions console and select the 'DataPrepStateMachine' state mac
 Wait for it to feature some successful execution, that you can inspect manually.
 
 Congratulations! You can now visit the Service Catalog console and terminate all
-products to as to save on cloud costs.
+products so as to save on cloud costs.
