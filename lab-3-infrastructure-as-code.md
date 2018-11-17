@@ -80,14 +80,18 @@ inspect the work done by the pipeline on your templates. It should be a FAILURE.
 
 10) Edit the configuration file on your workstation:
 
-    $ nano ci/taskcat.yml
+```shell
+$ nano ci/taskcat.yml
+```
 
 Ensure that qsname is set with the name of your repository, aka, iac-with-taskcat and that
 you keep only 2 or 3 regions for deployment.
 
 Save with Ctrl-O and exit with Ctrl-X
 
-    $ nano ci/debug-input.json
+```shell
+$ nano ci/debug-input.json
+```
 
 Change settings related to LocalOverrideTests (from "override" to "hello") and
 to GlobalOverrideTests (from "override" to "world") since the pipeline prevents
