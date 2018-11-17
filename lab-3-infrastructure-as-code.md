@@ -45,6 +45,7 @@ Provide the name that you gave to CloudFormation.
 7) For this lab you will not have to create your own templates. We will copy
 sample files provided by the TaskCat team instead:
 
+```shell
     $ git clone https://github.com/<your-github-identifier>/iac-with-taskcat.git
     $ cd iac-with-taskcat/
     $ git clone --depth 1 https://github.com/aws-quickstart/taskcat.git
@@ -58,6 +59,7 @@ sample files provided by the TaskCat team instead:
     $ git add .
     $ git status
     $ git commit -m 'initial push using TaskCat sample files'
+```
 
 We then create a branch for future releases of templates, and then push
 everything to GitHub:
