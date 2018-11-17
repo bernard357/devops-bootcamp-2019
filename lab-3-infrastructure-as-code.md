@@ -46,28 +46,30 @@ Provide the name that you gave to CloudFormation.
 sample files provided by the TaskCat team instead:
 
 ```shell
-    $ git clone https://github.com/<your-github-identifier>/iac-with-taskcat.git
-    $ cd iac-with-taskcat/
-    $ git clone --depth 1 https://github.com/aws-quickstart/taskcat.git
-    $ ls taskcat/examples/sample-taskcat-project/
-    ci		scripts		templates
-    $ mv taskcat/examples/sample-taskcat-project/* .
-    $ rm -rf taskcat/
-    $ ls
-    ci		scripts		templates
-    $ git status
-    $ git add .
-    $ git status
-    $ git commit -m 'initial push using TaskCat sample files'
+$ git clone https://github.com/<your-github-identifier>/iac-with-taskcat.git
+$ cd iac-with-taskcat/
+$ git clone --depth 1 https://github.com/aws-quickstart/taskcat.git
+$ ls taskcat/examples/sample-taskcat-project/
+ci		scripts		templates
+$ mv taskcat/examples/sample-taskcat-project/* .
+$ rm -rf taskcat/
+$ ls
+ci		scripts		templates
+$ git status
+$ git add .
+$ git status
+$ git commit -m 'initial push using TaskCat sample files'
 ```
 
 We then create a branch for future releases of templates, and then push
 everything to GitHub:
 
-    $ git checkout -b release
-    $ git push --set-upstream origin release
-    $ git checkout master
-    $ git push
+```shell
+$ git checkout -b release
+$ git push --set-upstream origin release
+$ git checkout master
+$ git push
+```
 
 8) Visit the GitHub page of your project to ensure that files have been pushed there.
 Also ensure that there are two branches in your project: "master" and "release"
@@ -93,10 +95,12 @@ the value "override" there. Save with Ctrl-O and exit with Ctrl-X
 
 Push your changes to as to relaunch the pipeline:
 
-    $ git diff
-    $ git add .
-    $ git commit -m 'fix the TaskCat configuration'
-    $ git push
+```shell
+$ git diff
+$ git add .
+$ git commit -m 'fix the TaskCat configuration'
+$ git push
+```
 
 11) Go back to the CodePipeline page and watch the work done there. It should be
 a SUCCESS.
