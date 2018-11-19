@@ -49,39 +49,27 @@ Last but not least, share the portfolio with yourself so that you can consume pr
 Go to the CodeCommit console, and create a new repository 'datalake-pipeline'.
 
 For git commands to work with CodeCommit you have the choice of HTTPS or SSH access.
-The setup of SSH only requires that you upload your public key to your IAM user so it
-may be a bit quicker. Look at files in `~/.ssh` on your workstation and display the content
-of a public key (it ends with `.pub`). Multiple solutions exist for the creation of a new
-SSH key, for example:
+Here we will use the standard Git Credential Helper which can retrieve your credentials
+from your CLI aws credentials. The complete procedure is described here: https://amzn.to/2TselX8 
+
+If you're using your default aws profile please apply the following:  
 
 ```shell
-$ ssh-keygen -t rsa
+$ git config --global credential.helper '!aws codecommit credential-helper $@'
+$ git config --global credential.UseHttpPath true
 ```
 
-Then go to the IAM console, select your user profile,
-and in the tab 'Security credentials', click on 'Upload SSH public key'.
-Note the SSH Key ID since it will be used on next step.
-
-The bridge between your AWS identity and the SSH key is done in the
-file `~/.ssh/config` on your workstation. For example:
+But if you're using a non-default AWS profile, please apply the following command:  
 
 ```shell
-$ nano ~/.ssh/config
-```
-
-Content should be similar to the following:
-
-```
-Host git-codecommit.*.amazonaws.com
-    User <Your-AWS-SSHs-Key-ID>
-    IdentityFile ~/.ssh/<name-of-private-key-without-the-.pub-extension>
+$ git config --global credential.helper '!aws --profile CodeCommitProfile codecommit credential-helper $@' 
 ```
 
 Now we can clone the repository locally, and populate it from the public
 repository that has been shared by Paul de Monchy:
 
 ```shell
-$ git clone ssh://git-codecommit.eu-west-1.amazonaws.com/v1/repos/datalake-pipeline
+$ git clone https://git-codecommit.eu-west-1.amazonaws.com/v1/repos/datalake-pipeline
 $ git clone --depth 1 https://github.com/lePaulo/AWSDatalakeDataTransformationOrchestration.git
 $ mv AWSDatalakeDataTransformationOrchestration/* datalake-pipeline/
 $ rm -rf AWSDatalakeDataTransformationOrchestration/
