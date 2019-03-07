@@ -1,6 +1,6 @@
 # Hands-on with CloudFormation and CodePipeline
 
-credit: “Use AWS TaskCat, AWS CodePipeline, and AWS CodeBuild to test and deploy your templates” from AWS Quick Starts
+credit: [“Use AWS TaskCat, AWS CodePipeline, and AWS CodeBuild to test and deploy your templates”](https://amzn.to/2B98myY) from AWS Quick Starts
 
 ## Initial deployment
 
