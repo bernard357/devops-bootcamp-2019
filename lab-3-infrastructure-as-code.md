@@ -11,6 +11,7 @@ one at https://github.com/ before everythiong else.
 permissions. You will have to paste it in the CloudFormation web form.
 
 3) Go to following page and setup a new pipeline to test your templates with TaskCat: https://amzn.to/2B98myY
+[Launch the Quick Start](https://fwd.aws/RKbgm). The deployment takes about 15 minutes.
 On the CloudFormation Details page you can use following settings for GitHub Configuration:
 
 * Repository owner: <your-github-identifier>
