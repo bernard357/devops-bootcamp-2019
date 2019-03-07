@@ -2,17 +2,7 @@
 
 credit: “Use AWS TaskCat, AWS CodePipeline, and AWS CodeBuild to test and deploy your templates” from AWS Quick Starts
 
-## Instructions
-
-Over next 20 minutes, you are tasked to:
-
-* Secure GitHub credentials - go to https://www.github.com and create an account for yourself if needed
-
-* Go to following page and setup a new pipeline to test your templates with TaskCat: https://amzn.to/2B98myY
-
-If you have extra time: introduce some faults to a CloudFormation template, commit, push, and show evidence of TaskCat feedback
-
-## Additional notes
+## Initial deployment
 
 1) For this lab you will need a GitHub account. If you do not have one yet, then take 5 minutes to create
 one at https://github.com/ before everythiong else.
@@ -20,7 +10,8 @@ one at https://github.com/ before everythiong else.
 2) Generate a OAuth2 token from https://github.com/settings/tokens and add 'repo' and 'admin:repo_hook'
 permissions. You will have to paste it in the CloudFormation web form.
 
-3) On the CloudFormation Details page you can use following settings for GitHub Configuration:
+3) Go to following page and setup a new pipeline to test your templates with TaskCat: https://amzn.to/2B98myY
+On the CloudFormation Details page you can use following settings for GitHub Configuration:
 
 * Repository owner: <your-github-identifier>
 
@@ -31,6 +22,8 @@ permissions. You will have to paste it in the CloudFormation web form.
 * Release branch: release
 
 * OAuth2 token: <your-oauth2-token>
+
+## Do the lab
 
 4) It will too 5 to 8 minutes for the creation of full stack. In the meantime you can read the on-line
 documentation starting at https://docs.aws.amazon.com/quickstart/latest/cicd-taskcat/overview.html
