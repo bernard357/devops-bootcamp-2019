@@ -14,35 +14,13 @@ over GitHub. Thank you!
 
 ### Step 1 - Create Service Catalog products
 
-From the Service catalog console, select the Products list from the Admin
-panel in the left menu.
+From your bash Cloud9 bash console, execute the following commands, and replace {my_role_or_user_arn} with your own arn:
 
-Create a first product with following attributes:
-* Product name: CloudTrail for S3 Datalakes
-* Product details: Create a CloudTrail on S3 arns that are to be followed for event triggering.
-* Provided by: lePaulo
-
-Click on Next and then on Next again.
-
-In the panel, click on 'Specify a URL location for an Amazon CloudFormation template'
-and paste: https://bit.ly/2PzvLTd
-
-For the version, you can type 'June 2018'.
-
-Create a second product with following attributes:
-* Product name: Datalake Batch pipeline
-* Product details: Create a CodePipeline CI/CD pipeline for automatic deployment of project modifications on commit.
-* Provided by: lePaulo
-
-Click on Next and then on Next again.
-
-In the panel, click on 'Specify a URL location for an Amazon CloudFormation template'
-and paste: https://bit.ly/2Ds1ApL
-
-For the version, you can type 'June 2018'.
-
-Then Create a portfolio for your products, using your GitHub identifier as a prefix.
-Last but not least, share the portfolio with yourself so that you can consume products.
+```shell
+$ git clone --depth 1 https://github.com/lePaulo/AWSDatalakeDataTransformationOrchestration.git
+$ chmod +x AWSDatalakeDataTransformationOrchestration/SERVICE_CATALOG/service-catalog-config.sh
+$ AWSDatalakeDataTransformationOrchestration/SERVICE_CATALOG/service-catalog-config.sh {my_role_or_user_arn}
+```
 
 ### Step 2 - Provision a Git repository
 
@@ -70,7 +48,6 @@ repository that has been shared by Paul de Monchy:
 
 ```shell
 $ git clone https://git-codecommit.eu-west-1.amazonaws.com/v1/repos/datalake-pipeline
-$ git clone --depth 1 https://github.com/lePaulo/AWSDatalakeDataTransformationOrchestration.git
 $ mv AWSDatalakeDataTransformationOrchestration/* datalake-pipeline/
 $ rm -rf AWSDatalakeDataTransformationOrchestration/
 $ cd datalake-pipeline/
