@@ -7,7 +7,7 @@ credit: [“Extending AWS CodeBuild with Custom Build Environments”](https://a
 1) Clone the Git repository:
 
 ```
-git clone https://github.com/awslabs/codebuild-images.git
+git clone https://github.com/luigibianchi/codebuild-images.git
 cd codebuild-images
 ```
 
@@ -36,7 +36,7 @@ After the stack has been created, CloudFormation will return two outputs:
 BuildImageRepositoryUri: the URI of the Docker repository that will host our build environment image.
 SourceCodeRepositoryCloneUrl: the clone URL of the Git repository that will host our sample PHP code.
 
-4) Edit content of the Dockerfile with this:
+4) Check the content of the Dockerfile:
 
 ```
 FROM php:7
