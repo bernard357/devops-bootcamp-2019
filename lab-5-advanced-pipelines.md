@@ -1,10 +1,10 @@
 # Hands-on with Service Catalog, CodePipeline, CodeBuild
 
-credit: “Datalake data transformation orchestration on AWS” from Paul de Monchy
+credit: “Datalake data transformation orchestration on AWS” from Paul de Monchy
 
 ## Instructions
 
-Over next 20 minutes, you are tasked to visit following page and create a datalake
+You are tasked to visit following page and create a datalake
 batch pipeline with Service Catalog: https://bit.ly/2FoEh2R
 
 If you have extra time, improve the code base and submit a pull request to Paul
